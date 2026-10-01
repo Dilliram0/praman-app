@@ -1,0 +1,479 @@
+[
+  {
+    "id": "waiwai-chicken",
+    "name": "Wai Wai Noodles",
+    "brand": "Wai Wai",
+    "image": "/products/waiwai-chicken.png",
+    "imageSource": "web product listing",
+    "imageUrl": "https://cheers.com.np/uploads/products/01847674251038328073490841465273419818.png",
+    "sourcePage": "https://cheers.com.np/liquor/product/wai-wai-chicken-flavour-noodles-60g"
+  },
+  {
+    "id": "waiwai-veg",
+    "name": "Wai Wai Vegetable Noodles",
+    "brand": "Wai Wai",
+    "image": "/products/waiwai-veg.png",
+    "imageSource": "web product listing",
+    "imageUrl": "https://cheers.com.np/uploads/products/356856769881368330726611847858712652665.png",
+    "sourcePage": "https://cheers.com.np/grocery/product/wai-wai-veg-masala-flavour-noodles-60g"
+  },
+  {
+    "id": "waiwai-xpress",
+    "name": "Wai Wai Xpress Noodles",
+    "brand": "Wai Wai",
+    "image": "/products/waiwai-xpress.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/601/303/2613/front_en.5.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8906013032613"
+  },
+  {
+    "id": "rara-chicken",
+    "name": "Rara Instant Noodles",
+    "brand": "Rara",
+    "image": "/products/rara-chicken.png",
+    "imageSource": "web product listing",
+    "imageUrl": "https://mallko.store/cdn/shop/products/RaraNepaliWhiteNoodles.png?v=1768934290&width=1445",
+    "sourcePage": "https://mallko.store/products/rara-instant-noodles-single-pack"
+  },
+  {
+    "id": "mayos-veg",
+    "name": "Mayos Noodles",
+    "brand": "Mayos",
+    "image": "/products/mayos-veg.jpg",
+    "imageSource": "web product listing",
+    "imageUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/64e74f152584225.6320b44f35bb7.jpg",
+    "sourcePage": "https://www.behance.net/gallery/152584225/Instant-Noodles-Packaging-Nepal"
+  },
+  {
+    "id": "rumpum-chicken",
+    "name": "Rum Pum Noodles",
+    "brand": "Rum Pum",
+    "image": "/products/rumpum-chicken.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/950/600/002/2444/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/9506000022444"
+  },
+  {
+    "id": "2pm-akabare",
+    "name": "2PM Noodles",
+    "brand": "2PM",
+    "image": "/products/2pm-akabare.jpg",
+    "imageSource": "web product listing",
+    "imageUrl": "https://www.primeemarket.com/cdn/shop/products/1643272122_5ccf1b6c-7914-450e-b12b-e3f06ee35766.jpg?v=1676296748",
+    "sourcePage": "https://www.primeemarket.com/products/2pm-noodles-akhabare-c"
+  },
+  {
+    "id": "pringles",
+    "name": "Pringles Original",
+    "brand": "Pringles",
+    "image": "/products/pringles.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/505/399/011/1503/front_en.9.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/5053990111503"
+  },
+  {
+    "id": "lays",
+    "name": "Lay’s Classic",
+    "brand": "Lay’s",
+    "image": "/products/lays.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/006/041/002/5604/front_en.19.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/0060410025604"
+  },
+  {
+    "id": "parleg",
+    "name": "Parle-G Biscuits",
+    "brand": "Parle",
+    "image": "/products/parleg.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/171/910/1090/front_en.8.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901719101090"
+  },
+  {
+    "id": "mariegold",
+    "name": "Britannia Marie Gold",
+    "brand": "Britannia",
+    "image": "/products/mariegold.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/106/316/2242/front_en.11.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901063162242"
+  },
+  {
+    "id": "goodday",
+    "name": "Britannia Good Day",
+    "brand": "Britannia",
+    "image": "/products/goodday.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/106/309/2631/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901063092631"
+  },
+  {
+    "id": "oreo",
+    "name": "Oreo Choco Creme",
+    "brand": "Oreo",
+    "image": "/products/oreo.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/123/302/7555/front_en.18.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901233027555"
+  },
+  {
+    "id": "dairy-milk",
+    "name": "Cadbury Dairy Milk",
+    "brand": "Cadbury",
+    "image": "/products/dairy-milk.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/123/303/0548/front_en.16.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901233030548"
+  },
+  {
+    "id": "kitkat",
+    "name": "KitKat",
+    "brand": "Nestlé",
+    "image": "/products/kitkat.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/105/886/8036/front_en.5.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901058868036"
+  },
+  {
+    "id": "snickers",
+    "name": "Snickers",
+    "brand": "Mars",
+    "image": "/products/snickers.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/500/015/948/4480/front_en.18.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/5000159484480"
+  },
+  {
+    "id": "choco-pie",
+    "name": "Orion Choco Pie",
+    "brand": "Orion",
+    "image": "/products/choco-pie.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/613/090/0239/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8906130900239"
+  },
+  {
+    "id": "5star",
+    "name": "Cadbury 5 Star",
+    "brand": "Cadbury",
+    "image": "/products/5star.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/123/302/0273/front_en.5.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901233020273"
+  },
+  {
+    "id": "munch",
+    "name": "Nestlé Munch",
+    "brand": "Nestlé",
+    "image": "/products/munch.jpg",
+    "imageSource": "web product listing",
+    "imageUrl": "https://candycave.ie/cdn/shop/files/nestle-munch-bars-india-18g-471284_90b09d15-8532-453e-b40f-5031afd749aa.jpg?v=1744391518",
+    "sourcePage": "https://candycave.ie/products/nestle-munch-bars-india-18g"
+  },
+  {
+    "id": "perk",
+    "name": "Cadbury Perk",
+    "brand": "Cadbury",
+    "image": "/products/perk.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/123/302/4042/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901233024042"
+  },
+  {
+    "id": "waiwai-cheese",
+    "name": "Wai Wai Quick Cheese Noodles",
+    "brand": "CG Foods",
+    "image": "/products/waiwai-cheese.png",
+    "imageSource": "web product listing",
+    "imageUrl": "https://cheers.com.np/uploads/products/333600098156099295107537714560775047517.png",
+    "sourcePage": "https://cheers.com.np/grocery/product/wai-wai-quick-spicy-cheese-flavoured-noodles-100g"
+  },
+  {
+    "id": "current-3x",
+    "name": "Current 3X Spicy Noodles",
+    "brand": "Yashoda Foods",
+    "image": "/products/current-3x.png",
+    "imageSource": "web product listing",
+    "imageUrl": "https://yashodafoods.com.np/wp-content/uploads/2024/03/current-masala-noodles.png",
+    "sourcePage": "https://yashodafoods.com.np/"
+  },
+  {
+    "id": "kwiks-chicken",
+    "name": "Kwiks Chicken Noodles",
+    "brand": "CG Foods",
+    "image": null,
+    "imageUrl": null,
+    "sourcePage": null,
+    "imageSource": null
+  },
+  {
+    "id": "momo-masala",
+    "name": "Momo Masala Noodles",
+    "brand": "CG Foods",
+    "image": null
+  },
+  {
+    "id": "coke",
+    "name": "Coca-Cola Original",
+    "brand": "Coca-Cola",
+    "image": "/products/coke.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/500/011/266/3952/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/5000112663952"
+  },
+  {
+    "id": "fanta",
+    "name": "Fanta Orange",
+    "brand": "Coca-Cola",
+    "image": "/products/fanta.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/500/011/264/7815/front_en.17.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/5000112647815"
+  },
+  {
+    "id": "sprite",
+    "name": "Sprite Lemon-Lime",
+    "brand": "Coca-Cola",
+    "image": "/products/sprite.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/500/011/266/4263/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/5000112664263"
+  },
+  {
+    "id": "real-orange",
+    "name": "Real Fruit Power Orange",
+    "brand": "Dabur",
+    "image": "/products/real-orange.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/479/600/892/0056/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/4796008920056"
+  },
+  {
+    "id": "tropicana",
+    "name": "Tropicana Mixed Fruit",
+    "brand": "PepsiCo",
+    "image": "/products/tropicana.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/208/001/3395/front_en.14.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8902080013395"
+  },
+  {
+    "id": "redbull",
+    "name": "Red Bull Energy Drink",
+    "brand": "Red Bull",
+    "image": "/products/redbull.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/900/249/020/5973/front.24.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/9002490205973"
+  },
+  {
+    "id": "ddc-milk",
+    "name": "DDC Pasteurized Milk",
+    "brand": "DDC",
+    "image": "/products/ddc-milk.png",
+    "imageSource": "web product listing",
+    "imageUrl": "https://cms.ddc.org.np/api/files/products/obxw79bkc7pi1v9/cow_milk_enhanced_8u85cgmlvn.png?thumb=256x256",
+    "sourcePage": "https://ddc.org.np/"
+  },
+  {
+    "id": "ddc-paneer",
+    "name": "DDC Paneer",
+    "brand": "DDC",
+    "image": "/products/ddc-paneer.jpg",
+    "imageSource": "web product listing",
+    "imageUrl": "https://pasal101.thulo.com.np/assets/tenant/uploads/media-uploader/pasal101/grid/grid-20240628012311_1317663947.jpg",
+    "sourcePage": "https://thulo.com.np/paneer"
+  },
+  {
+    "id": "waiwai-chips",
+    "name": "Wai Wai Potato Chips",
+    "brand": "CG Foods",
+    "image": null
+  },
+  {
+    "id": "current-cheese",
+    "name": "Current Cheese Balls",
+    "brand": "Yashoda Foods",
+    "image": "/products/current-cheese.png",
+    "imageSource": "web product listing",
+    "imageUrl": "https://yashodafoods.com.np/wp-content/uploads/2024/03/current-cheese-balls.png",
+    "sourcePage": "https://yashodafoods.com.np/"
+  },
+  {
+    "id": "kurkure",
+    "name": "Kurkure Masala Munch",
+    "brand": "PepsiCo",
+    "image": "/products/kurkure.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/149/110/0519/front_en.29.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901491100519"
+  },
+  {
+    "id": "bhujia",
+    "name": "Haldiram Aloo Bhujia",
+    "brand": "Haldiram",
+    "image": "/products/bhujia.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/406/321/4331/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8904063214331"
+  },
+  {
+    "id": "kwality-marie",
+    "name": "Kwality Marie Biscuits",
+    "brand": "Kwality",
+    "image": "/products/kwality-marie.jpg",
+    "imageSource": "web product listing",
+    "imageUrl": "https://kwalitythaifoods.thulo.com.np/assets/tenant/uploads/media-uploader/kwalitythaifoods/grid/grid-20240717030917_1192259606.jpg",
+    "sourcePage": "https://kwalitythaifoods.thulo.com.np/"
+  },
+  {
+    "id": "hulas-digestive",
+    "name": "Hulas Digestive Biscuits",
+    "brand": "Hulas",
+    "image": null,
+    "imageSource": null,
+    "imageUrl": null,
+    "sourcePage": null
+  },
+  {
+    "id": "chocofun",
+    "name": "Sujal ChocoFun Wafer",
+    "brand": "Sujal Foods",
+    "image": "/products/chocofun.png",
+    "imageSource": "web product listing",
+    "imageUrl": "https://www.sujal.com.np/assets/chocofun-wafer.png",
+    "sourcePage": "https://www.sujal.com.np/chocofun"
+  },
+  {
+    "id": "darkfantasy",
+    "name": "Sunfeast Dark Fantasy",
+    "brand": "ITC",
+    "image": "/products/darkfantasy.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/172/513/3979/front_en.7.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901725133979"
+  },
+  {
+    "id": "cornflakes",
+    "name": "Kellogg’s Corn Flakes",
+    "brand": "Kellogg’s",
+    "image": "/products/cornflakes.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/149/900/9661/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901499009661"
+  },
+  {
+    "id": "quaker-oats",
+    "name": "Quaker Oats",
+    "brand": "PepsiCo",
+    "image": "/products/quaker-oats.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/007/042/400/4052/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/0070424004052"
+  },
+  {
+    "id": "sampann-dal",
+    "name": "Tata Sampann Toor Dal",
+    "brand": "Tata Consumer",
+    "image": "/products/sampann-dal.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/404/392/6216/front_en.5.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8904043926216"
+  },
+  {
+    "id": "fortune-oil",
+    "name": "Fortune Sunflower Oil",
+    "brand": "AWL Agri",
+    "image": "/products/fortune-oil.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/600/728/0280/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8906007280280"
+  },
+  {
+    "id": "hjava",
+    "name": "Himalayan Java Coffee",
+    "brand": "Himalayan Java",
+    "image": "/products/hjava.jpg",
+    "imageUrl": "https://yantrahimalaya.com/wp-content/uploads/2021/01/1.jpg",
+    "sourcePage": "https://yantrahimalaya.com/everest-roast-himalayan-java-coffee-beans/",
+    "imageSource": "web product listing"
+  },
+  {
+    "id": "nepal-tea",
+    "name": "Nepal Tea Premium CTC",
+    "brand": "Nepal Tea",
+    "image": "/products/nepal-tea.jpg",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/891/325/648/7803/front_vi.7.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8913256487803",
+    "imageSource": "Open Food Facts"
+  },
+  {
+    "id": "aqua100",
+    "name": "Aqua 100 Himalayan Spring Water",
+    "brand": "Aqua 100",
+    "image": "/products/aqua100.jpg",
+    "imageSource": "web product listing",
+    "imageUrl": "https://assets-cdn.kathmandupost.com/uploads/source/news/2020/money/aqua1002-1597160184.jpg",
+    "sourcePage": "https://kathmandupost.com/money/2020/08/11/maximum-retail-price-set-for-bottled-water-not-to-apply-to-premium-brands"
+  },
+  {
+    "id": "lapsi-candy",
+    "name": "Mitho Lapsi Candy",
+    "brand": "Mitho",
+    "image": null
+  },
+  {
+    "id": "kwality-icecream",
+    "name": "Kwality Vanilla Ice Cream",
+    "brand": "Kwality",
+    "image": "/products/kwality-icecream.jpg",
+    "imageSource": "web product listing",
+    "imageUrl": "https://images.foodmandu.com/Images/Vendor/895/Product/183352/kawality-17_170921114603.jpg",
+    "sourcePage": "https://foodmandu.com/Restaurant/Details/895"
+  },
+  {
+    "id": "aaha-rice",
+    "name": "Aaha Basmati Rice",
+    "brand": "Aaha!",
+    "image": null,
+    "imageUrl": null,
+    "sourcePage": null,
+    "imageSource": null
+  },
+  {
+    "id": "himalaya-facewash",
+    "name": "Himalaya Neem Face Wash",
+    "brand": "Himalaya",
+    "image": "/products/himalaya-facewash.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/890/113/885/1248/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/8901138851248"
+  },
+  {
+    "id": "dove-soap",
+    "name": "Dove Beauty Bar",
+    "brand": "Unilever",
+    "image": "/products/dove-soap.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/006/723/889/1190/front_en.3.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/0067238891190"
+  },
+  {
+    "id": "sunsilk",
+    "name": "Sunsilk Shampoo",
+    "brand": "Unilever",
+    "image": "/products/sunsilk.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/628/100/642/4647/front_en.5.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/6281006424647"
+  },
+  {
+    "id": "closeup",
+    "name": "Closeup Red Hot Toothpaste",
+    "brand": "Unilever",
+    "image": "/products/closeup.jpg",
+    "imageSource": "Open Food Facts",
+    "imageUrl": "https://images.openfoodfacts.org/images/products/480/088/814/7288/front_en.6.400.jpg",
+    "sourcePage": "https://world.openfoodfacts.org/product/4800888147288"
+  }
+]
