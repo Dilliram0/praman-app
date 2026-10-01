@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { allProducts } from '@/lib/db';
+import { products } from '@/lib/catalog';
 import type { Product } from '@/lib/catalog';
 
 export const runtime = 'nodejs';
 export async function POST(request: NextRequest) {
   const {barcode}=await request.json() as {barcode?:string};
   if (!barcode || !/^\d{8,14}$/.test(barcode)) return NextResponse.json({error:'Enter a valid 8–14 digit barcode.'},{status:400});
-  const local=allProducts().find((p:{barcode?:string})=>p.barcode===barcode);
+  const local=products.find((p:{barcode?:string})=>p.barcode===barcode);
   if(local)return NextResponse.json({match:local,source:'Praman catalog'});
   try {
     const response=await fetch(`https://world.openfoodfacts.org/api/v2/product/${encodeURIComponent(barcode)}.json`,{headers:{'User-Agent':'Praman/1.0 (Nepal product guide)'},signal:AbortSignal.timeout(4500),next:{revalidate:86400}});

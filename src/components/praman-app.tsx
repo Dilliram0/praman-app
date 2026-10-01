@@ -60,10 +60,13 @@ export default function PramanApp(){
 
   const notify=useCallback((message:string)=>{setToast(message);window.setTimeout(()=>setToast(''),2500)},[]);
   useEffect(()=>{
-    Promise.all([fetch('/api/products').then(r=>r.json()),fetch('/api/state').then(r=>r.json())])
-      .then(([data,state])=>{setProducts(data.items||[]);setAppState(state);setPrefs(state.preferences||blank.preferences)})
+    fetch('/api/products').then(r=>{if(!r.ok)throw new Error('Product loading failed');return r.json()})
+      .then(data=>{if(!Array.isArray(data.items))throw new Error('Invalid product response');setProducts(data.items)})
       .catch(()=>notify('Could not connect to the Praman server. Try refreshing.'))
       .finally(()=>setLoading(false));
+    fetch('/api/state').then(r=>{if(!r.ok)throw new Error('State loading failed');return r.json()})
+      .then(state=>{setAppState(state);setPrefs(state.preferences||blank.preferences)})
+      .catch(()=>notify('Saved products and preferences are temporarily unavailable.'));
   },[notify]);
   const persist=useCallback(async(next:AppState)=>{
     setAppState(next);setPrefs(next.preferences);
@@ -72,7 +75,7 @@ export default function PramanApp(){
   },[notify]);
   const loadProducts=useCallback(async(q=query,c=category,s=sort)=>{
     const params=new URLSearchParams();if(q.trim())params.set('q',q.trim());if(c!=='All')params.set('category',c);params.set('sort',s);
-    const data=await fetch(`/api/products?${params}`).then(r=>r.json());setProducts(data.items||[]);
+    const data=await fetch(`/api/products?${params}`).then(r=>{if(!r.ok)throw new Error('Product search failed');return r.json()});if(!Array.isArray(data.items))throw new Error('Invalid product response');setProducts(data.items);
   },[query,category,sort]);
   useEffect(()=>{if(view==='search'){const id=window.setTimeout(()=>{loadProducts().catch(()=>notify('Product search is unavailable.'))},140);return()=>clearTimeout(id)}},[view,query,category,sort,loadProducts,notify]);
   const openProduct=(product:Product,personalized=false)=>{setBarcodeResult(null);setModal(null);setSelected(product);setForYou(personalized);setPerServing(false);setView('search');window.scrollTo({top:0,behavior:'smooth'})};
@@ -203,9 +206,7 @@ function SavedPage({products,state,onOpen,onSave,onList,onRemove,onClear,notify}
 }
 
 function UploadPage({submissions,onUpload}:{submissions:AppState['submissions'];onUpload:()=>void}){
-  return <><div className="page-title-row"><div><h1>Community uploads</h1><p>Help us make product information more useful for Nepal.</p></div><IconBubble tone="soft-mint" size="lg"><Upload size={25}/></IconBubble></div><section className="upload-banner"><IconBubble tone="purple" size="lg"><Barcode size={27}/></IconBubble><div><h2>Add a product to Praman</h2><p>Submit its name and barcode. We’ll mark it for review.</p></div><button className="primary-btn" onClick={onUpload}><Plus size={18}/>Contribute product</button></section><div className="section-heading list-heading"><div><h2>Submissions</h2></div><span className="status-tag"><span/>Pending review</span></div><section className="shopping-list">{submissions.length?submissions.map(s=><div className="submission-row" key={s.id}><IconBubble tone="soft-purple" size="sm"><Barcode size={16}/></IconBubble><span><b>{s.name}</b><small>{s.barcode||'No barcode provided'}</small></span><em>Pending review</em></div>):<div className="list-empty"><Upload size={24}/><span>Your product submissions will appear here.</span></div>}</section><p className="disclaimer">Submissions are stored locally in this app’s database and shown with a pending review status.</p></>;
+  return <><div className="page-title-row"><div><h1>Community uploads</h1><p>Help us make product information more useful for Nepal.</p></div><IconBubble tone="soft-mint" size="lg"><Upload size={25}/></IconBubble></div><section className="upload-banner"><IconBubble tone="purple" size="lg"><Barcode size={27}/></IconBubble><div><h2>Add a product to Praman</h2><p>Submit its name and barcode. We’ll mark it for review.</p></div><button className="primary-btn" onClick={onUpload}><Plus size={18}/>Contribute product</button></section><div className="section-heading list-heading"><div><h2>Submissions</h2></div><span className="status-tag"><span/>Pending review</span></div><section className="shopping-list">{submissions.length?submissions.map(s=><div className="submission-row" key={s.id}><IconBubble tone="soft-purple" size="sm"><Barcode size={16}/></IconBubble><span><b>{s.name}</b><small>{s.barcode||'No barcode provided'}</small></span><em>Pending review</em></div>):<div className="list-empty"><Upload size={24}/><span>Your product submissions will appear here.</span></div>}</section><p className="disclaimer">Submissions are stored in this app’s database and shown with a pending review status.</p></>;
 }
 
 function DialogHeader({title,close}:{title:string;close:()=>void}){return <div className="dialog-header"><div><IconBubble tone="purple"><Sparkles size={17}/></IconBubble><h2>{title}</h2></div><button className="icon-button" aria-label="Close dialog" onClick={close}><X size={19}/></button></div>}
-
-
