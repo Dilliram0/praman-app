@@ -1,13 +1,16 @@
 import { DatabaseSync } from 'node:sqlite';
 import { mkdirSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { products } from './catalog';
 
 const globalDb = globalThis as typeof globalThis & { pramanDb?: DatabaseSync };
 function database() {
   if (globalDb.pramanDb) return globalDb.pramanDb;
-  const location = process.env.DATABASE_PATH || './data/praman.db';
-  const fullPath = path.resolve(/* turbopackIgnore: true */ process.cwd(), location);
+  const isNetlify = process.env.NETLIFY === 'true';
+  const basePath = isNetlify ? tmpdir() : process.cwd();
+  const location = process.env.DATABASE_PATH || (isNetlify ? 'praman.db' : './data/praman.db');
+  const fullPath = path.resolve(/* turbopackIgnore: true */ basePath, location);
   mkdirSync(path.dirname(fullPath), { recursive: true });
   const db = new DatabaseSync(fullPath);
   db.exec(`PRAGMA journal_mode = WAL;
@@ -30,7 +33,8 @@ export function getState(userId = 'guest'): PramanState {
   db.prepare('INSERT OR IGNORE INTO user_state(user_id) VALUES (?)').run(userId);
   const row = db.prepare('SELECT saved,shopping_list,preferences FROM user_state WHERE user_id=?').get(userId) as {saved:string;shopping_list:string;preferences:string};
   const submissions = db.prepare('SELECT id,name,barcode,created_at as createdAt FROM submissions ORDER BY id DESC').all() as PramanState['submissions'];
-  return { saved:JSON.parse(row.saved), shoppingList:JSON.parse(row.shopping_list), preferences:JSON.parse(row.preferences), submissions };
+  const preferences = JSON.parse(row.preferences) as Partial<PramanState['preferences']>;
+  return { saved:JSON.parse(row.saved), shoppingList:JSON.parse(row.shopping_list), preferences:{diet:preferences.diet||'No preference',allergens:Array.isArray(preferences.allergens)?preferences.allergens:[]}, submissions };
 }
 export function saveState(input: Pick<PramanState,'saved'|'shoppingList'|'preferences'>, userId = 'guest') {
   database().prepare(`INSERT INTO user_state(user_id,saved,shopping_list,preferences) VALUES (?,?,?,?)
